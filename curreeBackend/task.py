@@ -23,7 +23,7 @@ def run():
 		standard = soup.select_one("span.standard").get_text(strip=True).split(" ")[0]
 		round = int(soup.select_one("span.round").get_text(strip=True)[4:-1])
 
-		logger.debug(convert_date, convert_time, standard, round)
+		logger.debug(f"convert_date: {convert_date}, convert_time: {convert_time}, standard: {standard}, round: {round}")
 
 		response = requests.get("https://finance.naver.com/marketindex/exchangeList.naver")
 		soup = BeautifulSoup(response.text, "html.parser")
