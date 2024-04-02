@@ -70,7 +70,7 @@ def run():
 		logger.error(e)
 
 
-cron_expression = "*/10 9-18 * * 1-5"
+cron_expression = "*/10 8-20 * * 1-5"
 trigger = CronTrigger.from_crontab(cron_expression)
 scheduler.add_job(run, trigger, id="run")
 logger.debug(f"add_job run {cron_expression}")
