@@ -3,4 +3,4 @@ VERSION=dev
 
 pip3 freeze > requirements.txt
 
-docker build -t curree_backend:$VERSION .
+docker build -t ehdl0515/curree_backend:$VERSION .
