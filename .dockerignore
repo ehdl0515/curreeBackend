@@ -1,2 +1,7 @@
 .gitignore
 .venv
+.github
+logs
+build.sh
+docker-compose.yml
+Dockerfile
